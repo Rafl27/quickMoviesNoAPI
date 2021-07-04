@@ -1,0 +1,255 @@
+/* TOPO */
+
+
+/*cores a serem usadas
+
+mist #90afc5
+stone #336b87
+shadow #2a3132
+autumm #763626
+
+*/
+
+.body {
+    background-color: #2a3132;
+}
+
+.header {
+    background-color: #c9782d;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.header_area {
+    padding: 10px;
+}
+
+.logoText {
+    color: white;
+}
+
+.active {
+    background-color: #2a3132;
+    color: white !important;
+}
+
+.menuArea {
+    margin-top: 8px;
+    color: white;
+}
+
+.nav-item a {
+    color: white;
+    background-color: black !important;
+}
+
+.nav-item a:hover {
+    background-color: rgb(77, 96, 112) !important;
+}
+
+
+/*cards */
+
+.card-body {
+    background-color: #4b4f50;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: rgb(176, 193, 207) !important;
+}
+
+.main .card {
+    margin-bottom: 15px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.menuzin .nav-item {
+    margin-bottom: 20px;
+}
+
+
+/*só pro nav2*/
+
+.menuzin .nav-item2 {
+    margin-bottom: 0px;
+}
+
+.nav-item2 a:hover {
+    background-color: rgb(77, 96, 112) !important;
+}
+
+.nav-item2 a {
+    color: white;
+    background-color: rgb(36, 46, 45) !important;
+}
+
+.modal-body img {
+    width: 100%;
+}
+
+.titleHorror {
+    text-align: center;
+    color: white;
+}
+
+.card {
+    transition: transform .1s;
+    /* Animation */
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.alta {
+    text-align: center;
+    color: white;
+}
+
+.emAlta {
+    background-color: #c9782d;
+    border-radius: 25px;
+}
+
+.dropdown {
+    text-align: right;
+}
+
+#dropdownMenuButton1 {
+    background-color: rgb(36, 46, 45);
+}
+
+.recentes {
+    color: white;
+    text-align: center;
+}
+
+.lançamentos {
+    color: white;
+    text-align: center;
+}
+
+.recomendações {
+    background-color: #c9782d;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    padding-top: 20px;
+}
+
+.estrelas {
+    width: auto;
+    height: 30px;
+}
+
+.data {
+    text-align: center;
+}
+
+.botão {
+    background-color: rgb(36, 46, 45);
+    text-align: right;
+}
+
+.botão:hover {
+    background-color: rgb(22, 122, 106);
+}
+
+.entrevistas {
+    padding-top: 20px;
+    color: white;
+}
+
+.videosYoutube {
+    text-align: center;
+}
+
+.descriçãoVideo {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.trailersText {
+    text-align: center;
+}
+
+.entrevistas {
+    background-color: #4b4f50;
+}
+
+#maisVideos {
+    text-align: right;
+    background-color: rgb(36, 46, 45);
+}
+
+#maisVideos:hover {
+    background-color: rgb(22, 122, 106);
+}
+
+.novidades {
+    color: white;
+    background-color: rgb(68, 68, 68);
+}
+
+.cargos {
+    font-size: 20px;
+}
+
+.icones {
+    height: 60px;
+}
+
+.imagemNovidades {
+    float: left;
+    padding-right: 20px;
+}
+
+.carouselStars {
+    width: auto;
+    height: 30px;
+}
+
+.imagemCarousel {
+    float: left;
+}
+
+.fotoCarousel {
+    height: auto;
+    width: auto;
+}
+
+
+/*BOTTOM*/
+
+.footer {
+    background-color: #4b4f50;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.videoYoutube {
+    margin: 0 auto;
+    display: block;
+}
+
+.lançamentoTitulo {
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.videoCarousel {
+    margin: 0 auto;
+    display: block;
+}

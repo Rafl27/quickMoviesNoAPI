@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>QuickMovies</title>
+</head>
+
+<body class="body2">
+
+    <!-- Button trigger modal -->
+    <!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  </button>
+
+    <!-Modal most watched -->
+    <div class="modal fade" id="modal_mostwatched" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Mais assistidos de todos os tempos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/modal/mostwatched.png" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal reviews -->
+    <div class="modal fade" id="modal_reviews" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Reviews</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>We Broke Up - Review</h3>
+                    <p>Break ups are never easy, but a break up right before a sibling’s wedding? That’s the pickle the couple finds themselves in Jeff Rosenberg’s romantic dramedy “We Broke Up.” Do they announce their big sad news before the wedding? Or,
+                        do they pretend to stay together so not to overshadow the couple getting married? That tension keeps the action volleying from one side to another as both Doug (William Jackson Harper) and Lori (Aya Cash) struggle to figure out
+                        what the right move is for them, or even if they’re truly over at all. A longtime couple everyone expected to get married, when Doug finally popped the question, Lori balked in a way that brought up more questions and eventually,
+                        Doug called it quits before Lori’s sister’s big summer camp-themed wedding. While the romantic uncertainty plays out, the movie has the ridiculous set-up of this strange themed wedding to lean on for jokes. Rosenberg, who co-wrote
+                        the script with Laura Jacqmin, digs deep into summer camp lore, giving the sisters many memories to reminiscence over. The film returns to the spot where the sisters enjoyed so many adolescent hijinks and re-imagines the place
+                        as a fancy resort with some old school amenities still intact, like cabins, but noticeably better pools and outdoor evening seating than your typical sleepaway camp. But to really get in the old camp spirit, the soon-to-be-wed
+                        couple Bea (Sarah Bolger) and Jayson (Tony Cavalero), insist their wedding party play the Paul Bunyan games, a series of drinking and skills competitions (in that order) that inadvertently bring out Lori and Doug’s wounded feelings.
+                        Not wanting to be outdone by the other, they throw themselves into the boozy fray. On the sidelines, mom Adelaide (Peri Gilpin) expresses some doubt about Bea’s decision to marry Jayson after only a month, adding yet another stick
+                        into the fire. Even though their characters may play on opposing teams, Cash and Jackson Harper’s performances are united in their doubts and feelings for each other. At different points in the movie, the injured party changes.
+                        Sometimes it’s Doug who walks away in anger. Other times, it’s Lori who has the downcast, hurt expression on her face. It’s a volatile dynamic, even if sometimes it feels as if things unnaturally escalate too quickly. "We Broke
+                        Up" holds onto a sliver of hope that the title will not come to ultimately pass, leaving a slight tinge of suspense of whether they will or won’t make it. Bolger and Cavalero’s characters have their own issues, but they’re the
+                        chaotic good spirits trying to make sure everyone is as happy as they are. They seem too bubbly and cheerfully talking nonsense, creating quite the dichotomy between the two couples. Both Rosenberg and Jackson Harper have the TV
+                        show “The Good Place” in common, where Rosenberg worked as an assistant director for a number of episodes and Jackson Harper was one of the series’ stars. It seems like the collaboration has benefitted “We Broke Up” in other ways
+                        as well. The movie has a measured sense of balancing existential questions like “What are we doing? What are we?” questions with some fairly silly scenarios. There’s space for anger and betrayal as well as a bride with a burgeoning
+                        scrunchie business. It strikes a subtle symmetry with its competing stories and emotions. Although the relationship at the heart of “We Broke Up” may be messy and complicated, Rosenberg ties all of the story’s elements together
+                        into a neat, bittersweet package. With cinematography by Andrew Aiello and production design by Amelia Steely, the movie really hones in on the upscale, semi-rustic wedding and the characters that either come alive in this environment
+                        or those that feel out-of-place in it. Relationships may not always be bliss, but “We Broke Up” is also a reminder that it’s worth salvaging the good moments from the wreckage. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Pedidos -->
+    <div class="modal fade" id="modal_pedidos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Pedidos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>The Seven Samurai</li>
+                        <li>Bonnie and Clyde</li>
+                        <li>Reservoir Dogs</li>
+                        <li>Airplane!</li>
+                        <li>Pan's Labyrinth</li>
+                        <li>Doctor Zhivago</li>
+                        <li>The Deer Hunter</li>
+                    </ul>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modais para os cards-->
+
+    <!--pulp fiction-->
+    <div class="modal fade" id="modal_pulp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Pulp Fiction</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Os caminhos de vários criminosos se cruzam nestas três histórias de Quentin Tarantino. Um pistoleiro se apaixona pela mulher de seu chefe, um boxeador não se sai bem em uma luta e um casal tenta executar um plano de roubo que foge
+                            do controle.</li>
+                        <li><b>Data de lançamento:</b> 18 de fevereiro de 1995 (Brasil)</li>
+                        <li><b>Diretor:</b> Quentin Tarantino</li>
+                        <li><b>Canção original:</b> Misirlou</li>
+                        <li><b>Roteiro:</b> Quentin Tarantino</li>
+                        <li><b>Prêmios:</b> Palma de Ouro, Oscar de Melhor Roteiro Original.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--scarface-->
+
+    <div class="modal fade" id="modal_scar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Scarface</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Após receber residência permanente nos Estados Unidos em troca do assassinato de um oficial do governo cubano, Tony Montana se torna o chefe do tráfico de drogas em Miami. Matando qualquer um que entre em seu caminho, Tony eventualmente
+                            se torna o maior traficante da Flórida, controlando quase toda a cocaína que entra em Miami. Porém, a pressão da polícia, as guerras com cartéis colombianos e sua própria paranoia servem para alimentar as chamas de sua eventual
+                            queda.
+                        </li>
+                        <li><b>Data de lançamento:</b>17 de maio de 1984 (Brasil) </li>
+                        <li><b>Diretor:</b> Brian De Palma </li>
+                        <li><b>Canção original:</b> Tony's Theme</li>
+                        <li><b>Música composta por:</b> Giorgio Moroder</li>
+                        <li><b>Indicações: </b> Prêmio Globo de Ouro: Melhor Ator Coadjuvante em Cinema</li>
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Taxi driver-->
+
+    <div class="modal fade" id="modal_taxi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Taxi Driver</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>O motorista de táxi de Nova York Travis Bickle, veterano da Guerra do Vietnã, reflete constantemente sobre a corrupção da vida ao seu redor e sente-se cada vez mais perturbado com a própria solidão e alienação. Apesar de não conseguir
+                            fazer contato emocional com ninguém e viver uma vida questionável em busca de diversão, ele se torna obcecado em ajudar uma prostituta de 12 anos que entra em seu táxi para fugir de um cafetão.</li>
+                        <li><b>Data de lançamento:</b> 22 de março de 1976 (Brasil)</li>
+                        <li><b>Diretor:</b> Martin Scorsese</li>
+                        <li><b>Roteiro: </b> Paul Schrader</li>
+                        <li><b>Música composta por:</b> Bernard Herrmann</li>
+                        <li><b>Prêmios:</b> Prêmio BAFTA de Cinema: Melhor Atriz Coadjuvante</li>
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--predator-->
+
+    <div class="modal fade" id="modal_predator" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Predator</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Dutch é contratado pelo governo dos Estados Unidos para resgatar políticos presos na Guatemala. Mas quando ele e sua equipe chegam na América Central, logo percebem que há algo errado. Depois de descobrir vários cadáveres, a equipe
+                            descobre que está sendo caçada por uma criatura brutal com força sobre-humana e uma capacidade surpreendente de se camuflar.</li>
+                        <li><b>Data de lançamento:</b> 30 de julho de 1987 (Brasil)</li>
+                        <li><b>Diretor:</b> John McTiernan</li>
+                        <li><b>Séries de filmes:</b> O Predador</li>
+                        <li><b>Música composta por:</b> Alan Silvestri</li>
+                        <li><b>Bilheteria:</b> 98,3 milhões USD</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal coming soon-->
+
+    <div class="modal fade" id="modal_soon" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Está chegando...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <p>Fique de olho, em breve será liberado</p>
+                    <p>Obrigado por acompanhar o QuickMovies!</p>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--menuInício-->
+    <header class="container header">
+        <div class="col-12 header_area">
+
+            <div class="row">
+                <!--logo-->
+                <div class="col-sm-12 col-md-4 col-lg-2">
+                    <img src="posters/loogo4.webp" class="logo">
+                    <b>QuickMovies</b>
+                </div>
+                <!--Menu-->
+                <div class="col-sm-12 col-md-8 col-lg-10 menuArea">
+                    <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="colecoes.html">Coleções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Histórico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Perfil</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--menuFim-->
+
+    <main class="container main">
+        <div class="row">
+
+            <div class="col-12">
+
+                <!--as duas colunas // dos filmes do momento-->
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-10">
+                        <h1 class="lançamentos"><b>Lançamentos</b></h1>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="wide/maxresdefault.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="wide/snyder-cut-liga-da-justica-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="wide/parasita.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!--menuzinho lateral-->
+                    <div class="col-sm-12 col-md-2 menuzin">
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modal_mostwatched">Most watched</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal_reviews">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal_pedidos">Pedidos</a>
+                            </li>
+                            <li class="nav-item2">
+                                <!--diferente o margin-bottom para ficar tudo junto-->
+                                <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">Dark Mode - ON</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!--Filmes já antigos-->
+
+                    <div class="row">
+
+                        <!--dropdown menu-->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Categoria
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Ação</a></li>
+                                <li><a class="dropdown-item" href="#">Terror</a></li>
+                                <li><a class="dropdown-item" href="#">Comédia</a></li>
+                            </ul>
+                        </div>
+                        <h1 class="alta"><b>Em alta</b></h1>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                                <img src="posters/pulp.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pulp Fiction</h5>
+                                    <p class="card-text">Os caminhos de vários criminosos se cruzam nestas três histórias de Quentin Tarantino. Um pistoleiro se apaixona pela mulher de seu chefe, um boxeador não se sai bem em uma luta e um casal tenta executar um plano de
+                                        roubo que foge do controle.</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal_pulp" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                                <img src="posters/scar.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Scarface</h5>
+                                    <p class="card-text">Após receber residência permanente nos Estados Unidos em troca do assassinato de um oficial do governo cubano, Tony Montana se torna o chefe do tráfico de drogas em Miami. Matando qualquer um que entre em seu caminho,
+                                        Tony eventualmente se..</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal_scar" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                                <img src="posters/taxiboy.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Taxi Driver</h5>
+                                    <p class="card-text">O motorista de táxi de Nova York Travis Bickle, veterano da Guerra do Vietnã, reflete constantemente sobre a corrupção da vida ao seu redor e sente-se cada vez mais perturbado com a própria solidão e alienação. Apesar
+                                        de não...</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal_taxi" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                                <img src="posters/terminator.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Predator</h5>
+                                    <p class="card-text">Uma perseguição entre naves alienígenas traz à Terra um novo predador, que acaba sendo capturado por humanos. Antes disso, ele tem seu capacete e bracelete roubados por Quinn McKenna, um atirador de elite que estava
+                                        em missão no local...</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal_predator" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--coming soon-->
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                                <img src="coming soon/comingsoon.gif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Em breve!</h5>
+                                    <p class="card-text">Aqui estarão disponíveis os filmes presentes na aba "PEDIDOS"</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal_soon" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                                <img src="coming soon/comingsoon.gif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Em breve!</h5>
+                                    <p class="card-text">Aqui estarão disponíveis os filmes presentes na aba "PEDIDOS"</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal_soon" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                                <img src="coming soon/comingsoon.gif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Em breve!</h5>
+                                    <p class="card-text">Aqui estarão disponíveis os filmes presentes na aba "PEDIDOS"</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal_soon" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                                <img src="coming soon/comingsoon.gif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Em breve!</h5>
+                                    <p class="card-text">Aqui estarão disponíveis os filmes presentes na aba "PEDIDOS"</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#modal_soon" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+    </main>
+
+    <main class="container recomendações">
+        <h1><b>Recomendações recentes</b></h1>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="card" style="width: 200px;">
+                            <img src="usuarios/pp.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rafael Souza</h5>
+                                <p class="card-text">Site simples e faz o que promete com maestria. Aguardando o "Come and see".</p>
+                                <p class="data">02/09/2020</p>
+                                <img src="png/estrelas.png" class="estrelas" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="card" style="width: 200px;">
+                            <img src="usuarios/artur.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Artur Penteado</h5>
+                                <p class="card-text">Bem bosta, seleção de filmes porca. Estarei voltando mês que vem.</p>
+                                <p class="data">29/10/2020</p>
+                                <img src="png/1estrela.png" class="estrelas" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 ">
+                        <div class="card" style="width: 200px;">
+                            <img src="usuarios/wallace.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wallace Socorro</h5>
+                                <p class="card-text">Interessante, irei voltar para mais filmes sem dúvidas!</p>
+                                <p class="data">29/01/2021</p>
+                                <img src="png/4estrelas.png" class="estrelas" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 ">
+                        <div class="card" style="width: 200px;">
+                            <img src="usuarios/maiok.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Maikon Felix</h5>
+                                <p class="card-text">Insano, estarei recomendando para amigos!</p>
+                                <p class="data">29/01/2021</p>
+                                <img src="png/3stars.png" class="estrelas" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 ">
+                        <div class="card" style="width: 200px;">
+                            <img src="usuarios/geovane.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Geovane</h5>
+                                <p class="card-text">Não gostei das cores do site!</p>
+                                <p class="data">25/12/2028</p>
+                                <img src="png/1estrela.png" class="estrelas" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 ">
+                        <div class="card" style="width: 200px;">
+                            <img src="usuarios/heron.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Heron</h5>
+                                <p class="card-text">Bem dahorinha em meu bacana</p>
+                                <p class="data">29/01/2021</p>
+                                <img src="png/4estrelas.png" class="estrelas" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="container footer">
+        <div class="row">
+            <div class="col-12 footer_area">
+                <b>QuickMovies - Copyright - 2021<b>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
